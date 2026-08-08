@@ -1,0 +1,25 @@
+title: Direwolf Cybersecurity
+url: "https://www.direwolfcybersecurity.com"
+description: >-
+  Insights on CMMC, NIST 800-171, penetration testing, and cybersecurity for
+  the manufacturing, defense, aerospace, and space industries.
+author: Mitchel Shepherd
+
+timezone: America/Denver
+future: true
+
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - HOW-TO-POST.md
