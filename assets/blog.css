@@ -58,6 +58,7 @@ header{
 }
 .blog-head p{color:var(--steel);max-width:620px}
 .post-list{padding:36px 0 88px;display:grid;gap:18px}
+.post-list .empty{color:var(--steel);font-size:15.5px}
 .card{
   display:block;background:var(--panel);border:1px solid var(--line);
   border-radius:8px;padding:26px 28px;transition:border-color .15s;

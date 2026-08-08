@@ -20,9 +20,10 @@ title: Blog
 <header>
   <div class="wrap nav">
     <a class="brand" href="/">
-      <img src="/assets/img/logo.webp" alt="Direwolf Cybersecurity">
+      <img src="/assets/img/logo.png" alt="Direwolf Cybersecurity">
     </a>
     <nav>
+      <a href="/">Home</a>
       <a href="/#services" class="hide-sm">Services</a>
       <a href="/blog/" aria-current="page">Blog</a>
       <a href="/#about" class="hide-sm">About</a>
@@ -47,6 +48,9 @@ title: Blog
       <span class="more">Read post →</span>
     </a>
     {% endfor %}
+    {% if site.posts.size == 0 %}
+    <p class="empty">First posts are in the works — check back soon.</p>
+    {% endif %}
   </div>
 </main>
 
