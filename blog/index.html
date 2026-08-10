@@ -1,65 +1,24 @@
 ---
-layout: null
+layout: default
 title: Blog
+description: Field notes on CMMC, NIST 800-171, penetration testing, managed security, and defending the manufacturing, defense, aerospace, and space industrial base.
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog — Direwolf Cybersecurity</title>
-<meta name="description" content="Field notes on CMMC, NIST 800-171, penetration testing, and cybersecurity for the manufacturing, defense, aerospace, and space industries.">
-<link rel="icon" type="image/png" href="/assets/img/shield.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/blog.css">
-</head>
-<body>
+<div class="wrap blog-head">
+  <span class="eyebrow">Direwolf Blog</span>
+  <h1>Field Notes from the Hunt</h1>
+  <p>Practical writing on CMMC, NIST 800-171, penetration testing, and defending the manufacturing, defense, aerospace, and space industrial base.</p>
+</div>
 
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="/">
-      <img src="/assets/img/logo.png" alt="Direwolf Cybersecurity">
-    </a>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/#services" class="hide-sm">Services</a>
-      <a href="/blog/" aria-current="page">Blog</a>
-      <a href="/#about" class="hide-sm">About</a>
-      <a class="btn" href="/#contact">Get a Quote</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <div class="wrap blog-head">
-    <span class="eyebrow">Direwolf Blog</span>
-    <h1>Field Notes from the Hunt</h1>
-    <p>Practical writing on CMMC, NIST 800-171, penetration testing, and defending the manufacturing, defense, aerospace, and space industrial base.</p>
-  </div>
-
-  <div class="wrap post-list">
-    {% for post in site.posts %}
-    <a class="card" href="{{ post.url }}">
-      <span class="card-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-      <h2>{{ post.title }}</h2>
-      <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
-      <span class="more">Read post →</span>
-    </a>
-    {% endfor %}
-    {% if site.posts.size == 0 %}
-    <p class="empty">First posts are in the works — check back soon.</p>
-    {% endif %}
-  </div>
-</main>
-
-<footer>
-  <div class="wrap">
-    <p>© {{ site.time | date: "%Y" }} Direwolf Cybersecurity. All rights reserved.</p>
-    <p>Test your defenses. Strengthen your posture. Run with Direwolf.</p>
-  </div>
-</footer>
-
-</body>
-</html>
+<div class="wrap post-list">
+  {% for post in site.posts %}
+  <a class="card" href="{{ post.url }}">
+    <span class="card-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+    <span class="more">Read post →</span>
+  </a>
+  {% endfor %}
+  {% if site.posts.size == 0 %}
+  <p class="empty">First posts are in the works — check back soon.</p>
+  {% endif %}
+</div>
