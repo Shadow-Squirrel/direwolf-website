@@ -54,6 +54,8 @@ header{
 .nav nav a[aria-current="page"]{color:var(--ice)}
 .nav nav a.btn{color:#06131C}
 .nav nav a.btn:hover{background:transparent;color:var(--ice)}
+.nav nav a.btn.btn-ghost{color:var(--frost)}
+.nav nav a.btn.btn-ghost:hover{color:var(--ice)}
 .btn{
   display:inline-block;background:var(--ice);color:#06131C;
   font-weight:600;font-size:15px;padding:11px 22px;border-radius:4px;
