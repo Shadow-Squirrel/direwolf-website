@@ -22,7 +22,7 @@
     <nav>
       <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
       <a href="/services/" {% if page.url == "/services/" %}aria-current="page"{% endif %}>Services</a>
-      <a href="/cmmc/" {% if page.url == "/cmmc/" %}aria-current="page"{% endif %}>CMMC &amp; CUI</a>
+      <a href="/cmmc/" {% if page.url == "/cmmc/" %}aria-current="page"{% endif %}>CUI &amp; CMMC</a>
       <a href="/who-we-serve/" {% if page.url == "/who-we-serve/" %}aria-current="page"{% endif %}>Who We Serve</a>
       <a href="/about/" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a>
       <a href="/blog/" {% if page.url contains "/blog" %}aria-current="page"{% endif %}>Blog</a>
@@ -39,13 +39,13 @@
   <div class="footer-grid">
     <div class="fbrand">
       <img src="/assets/img/logo.png" alt="Direwolf Cybersecurity">
-      <p>Veteran-owned cybersecurity firm delivering 24/7 managed security, penetration testing, and CMMC compliance for the manufacturing, defense, aerospace, and space industries.</p>
+      <p>Veteran-owned cybersecurity firm delivering 24/7 managed security, penetration testing, and CUI &amp; CMMC compliance for the manufacturing, defense, aerospace, and space industries.</p>
     </div>
     <div>
       <h4>Company</h4>
       <ul>
         <li><a href="/services/">Services</a></li>
-        <li><a href="/cmmc/">CMMC &amp; CUI</a></li>
+        <li><a href="/cmmc/">CUI &amp; CMMC</a></li>
         <li><a href="/who-we-serve/">Who We Serve</a></li>
         <li><a href="/about/">About</a></li>
         <li><a href="/blog/">Blog</a></li>
@@ -63,6 +63,7 @@
   <div class="footer-bottom">
     <div class="wrap">
       <p>© {{ site.time | date: "%Y" }} Direwolf Cybersecurity. All rights reserved.</p>
+      <p class="legal-links"><a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Use</a> · <a href="/sitemap.xml">Sitemap</a></p>
       <p>Test your defenses. Strengthen your posture. Run with Direwolf.</p>
     </div>
   </div>
