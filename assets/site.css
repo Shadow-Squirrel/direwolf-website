@@ -349,7 +349,7 @@ footer{border-top:1px solid var(--line)}
 .legal-links a:hover{color:var(--ice);text-decoration:none}
 
 /* ---------- RESPONSIVE ---------- */
-@media (max-width: 1140px){
+@media (max-width: 1040px){
   .nav nav{display:none}
   .menu-btn{
     display:block;margin-left:auto;background:none;border:1px solid var(--line);
